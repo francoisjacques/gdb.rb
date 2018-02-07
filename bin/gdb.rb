@@ -14,7 +14,7 @@ else
 end
 
 dir = File.expand_path('../../', __FILE__)
-binary = "#{Config::CONFIG['bindir']}/#{Config::CONFIG['ruby_install_name']}"
+binary = "#{RbConfig::CONFIG['bindir']}/#{RbConfig::CONFIG['ruby_install_name']}"
 
 args = []
 args << "#{dir}/ext/dst/bin/gdb"
